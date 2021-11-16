@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cantidad = prompt('Ingrese cuantos numeros desea colocar')
+        var nuevo_array = new Array(cantidad);
+        var mayor
+        
+        i = 0
+        nuevo_array[0] = prompt('Ingrese el primer numero')
+        mayor = nuevo_array[0]
+        i = i + 1
+        for(i = 1; i < cantidad; i++){
+            nuevo_array[i] = prompt('Ingrese un numero')
+            if (nuevo_array[i] > mayor){
+                mayor = nuevo_array[i]
+            }
+        }
+        document.write('El numero mayor del array es ' + mayor) 
+    
+    </script>
+</body>
+</html>
